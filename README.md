@@ -1,14 +1,26 @@
 # Lab 1: Introduction, HTTP & Web API (DGT01 1020)
 คู่มือการติดตั้งและรันโปรแกรม Network Programming Lab 01
 
-## 🛠️ ขั้นตอนการเตรียมเครื่อง (Setup)
-1. **ติดตั้ง Library ที่จำเป็น**
-   เปิด Terminal หรือ PowerShell แล้วรันคำสั่ง:
+## 🛠️ ขั้นตอนการเตรียมเครื่อง (Setup & venv)
+1. **สร้าง Virtual Environment (ครั้งแรกครั้งเดียว)**
    ```powershell
-   pip install requests fastapi uvicorn
+   python -m venv venv
    ```
 
+2. **Activate venv และติดตั้ง Library**
+   *   **Windows (PowerShell):**
+       ```powershell
+       .\venv\Scripts\Activate.ps1
+       pip install requests fastapi uvicorn
+       ```
+   *   **Command Prompt (cmd):**
+       ```cmd
+       venv\Scripts\activate.bat
+       pip install requests fastapi uvicorn
+       ```
+
 ## 🚀 ขั้นตอนการรัน Lab 01 แต่ละ Task
+*(ต้อง Activate venv ก่อนรันเสมอ)*
 รันไฟล์ Python ทีละเครื่องทาง Terminal:
 *   **Task 1: GitHub User Info**
     ```powershell
